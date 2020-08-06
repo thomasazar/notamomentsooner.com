@@ -1,0 +1,11 @@
+{{ $sorted := dict }}
+{{ $count := 0 }}
+{{ range . }}
+    {{ $last := last 1 (split .name " " )}}
+    {{ $last = (printf "%s-%s" $last $count) }}
+    {{ $count = add $count 1 }}
+    {{ $to_merge := dict $last . }}
+    {{ $sorted = merge $sorted $to_merge }}
+{{ end }}
+{{ $sorted = sort $sorted }}
+{{ return $sorted }}

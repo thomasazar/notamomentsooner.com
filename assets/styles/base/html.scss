@@ -1,0 +1,7 @@
+html {
+    // From http://clagnut.com/sandbox/font-size-adjust-ex.html
+    // Adjust font-size so that the fallback fonts match the CSS font
+    @supports (font-size-adjust: 1) {
+        //font-size-adjust: 0.563;
+    }
+}

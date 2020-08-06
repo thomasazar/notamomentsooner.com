@@ -1,0 +1,8 @@
+[Settings]
+  ID = "07c4efd5-cc31-410e-9968-e812486f3703"
+
+[build]
+  Base = ""
+  Publish = "public"
+  Command = "hugo --gc"
+  environment = { HUGO_VERSION = "0.74.3" }

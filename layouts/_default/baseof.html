@@ -1,0 +1,51 @@
+<!doctype html>
+<html class="no-js" lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- HTML Meta Tags -->
+    <meta name="description" content="{{ .Params.description | default $.Site.Params.description }}">
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="Not a Moment Sooner">
+    <meta itemprop="description" content="{{ .Params.description | default $.Site.Params.description }}">
+    <meta itemprop="image" content="https://www.notamomentsooner.com/images/card.png">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://www.notamomentsooner.com">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Not a Moment Sooner">
+    <meta property="og:description" content="{{ .Params.description | default $.Site.Params.description }}">
+    <meta property="og:image" content="https://www.notamomentsooner.com/images/card.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Not a Moment Sooner">
+    <meta name="twitter:description" content="{{ .Params.description | default $.Site.Params.description }}">
+    <meta name="twitter:image" content="https://www.notamomentsooner.com/images/card.png">
+
+    <!-- Meta Tags Generated via http://heymeta.com -->
+
+    {{ $sass := resources.Get "styles/main.scss" }}
+    {{ if eq hugo.Environment "development" }}
+        {{ $style := $sass | resources.ToCSS }}
+        <link rel="stylesheet" href="{{ $style.Permalink }}">
+    {{ else }}
+        {{ $options := (dict "targetPath" "css/main.css" "outputStyle" "compressed" "enableSourceMap" true ) }}
+        {{ $style := resources.Get "styles/main.scss" | resources.ToCSS $options | fingerprint }}
+        <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
+    {{ end }}
+</head>
+
+<body>
+    {{ partial "banner" . }}
+    <a href="/">
+        {{ partial "svg" "logo" }}
+    </a>
+    {{ block "main" . }}{{ end }}
+</body>
+
+</html>

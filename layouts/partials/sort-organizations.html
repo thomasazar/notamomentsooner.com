@@ -1,7 +1,8 @@
 {{ $sorted := dict }}
 {{ $count := 0 }}
 {{ range . }}
-    {{ $org := (printf "%s-%s" .name $count) }}
+    {{ $title := strings.TrimPrefix "The " .name }}
+    {{ $org := (printf "%s-%s" $title $count) }}
     {{ $count = add $count 1 }}
     {{ $to_merge := dict $org . }}
     {{ $sorted = merge $sorted $to_merge }}

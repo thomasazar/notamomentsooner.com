@@ -6,4 +6,9 @@
     li {
         break-inside: avoid;
     }
+
+    @media screen and (min-width: 60rem) {
+        grid-column: full-content;
+        columns: 4;
+    }
 }

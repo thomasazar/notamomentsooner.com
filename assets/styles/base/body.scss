@@ -1,13 +1,3 @@
 body {
     font-size: clamp(1rem, calc(0.125rem + 2vw), 1.5rem);
-    display: grid;
-    grid-template-columns: var(--grid-primary);
-
-    @media screen and (min-width: 60rem) {
-        grid-template-columns: var(--grid-desktop);
-    }
-
-    > * {
-        grid-column: main-content; // By default, put everything in [main-content]
-    }
 }

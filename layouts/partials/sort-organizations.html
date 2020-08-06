@@ -1,0 +1,10 @@
+{{ $sorted := dict }}
+{{ $count := 0 }}
+{{ range . }}
+    {{ $org := (printf "%s-%s" .name $count) }}
+    {{ $count = add $count 1 }}
+    {{ $to_merge := dict $org . }}
+    {{ $sorted = merge $sorted $to_merge }}
+{{ end }}
+{{ $sorted = sort $sorted }}
+{{ return $sorted }}

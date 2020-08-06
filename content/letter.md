@@ -31,4 +31,8 @@ We miss you. When it is safe, we will return to you, healthy and ready to work a
 When it is safe, and not a moment sooner.
 
 Signed,
-{{< signatures >}}
+### Individual Artists
+{{< artist-signatures >}}
+
+### Organizations
+{{< organization-signatures >}}

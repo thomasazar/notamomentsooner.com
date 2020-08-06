@@ -1,0 +1,5 @@
+<ul class="signatures">
+    {{ range partial "sort-names" .Site.Data.signatures.Organizations }}
+        <li>{{ .name }}</li>
+    {{ end }}
+</ul>

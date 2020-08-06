@@ -2,7 +2,7 @@
 title: Not a Moment Sooner
 ---
 
-## Join us on Friday, August 7, 2020 at 4:00pm for a virtual town hall
+# Join us on Friday, August 7, 2020 at 4:00pm for a virtual town hall
 
 Following the South Carolina Governor Henry McMaster's order reopening theatres and other venues, as well as a recent incident of Covid exposure within an Upstate cast, we are gathering in a virtual town hall to discuss the risk factors in participating in live theatre at this time.
 

@@ -10,6 +10,10 @@ Even though we are apart, we are not alone. Many organizations have responded to
 
 - [Metropolitan Arts Council](https://www.greenvillearts.com/)  
 Arts organizations in the Upstate are hurting from the pandemic. If you can help, every donation makes a difference.
+- [SETC COVID-19 Theatre Resources](https://www.setc.org/covid-resources/)  
+The Southeastern Theatre Conference has assembled a wealth of resources for everyone that has a love of theatre, including teachers, students, and professionals.
+- [Event Safety Alliance](https://www.eventsafetyalliance.org/)  
+The ESA strives to "eliminate the knowledge barrier that often contributes to unsafe conditions and behaviors through the promotion and teaching of good practices and the development of training and planning resources."
 - [Americans for the Arts Coronavirus Resource and Response Center](https://www.americansforthearts.org/by-topic/disaster-preparedness/coronavirus-covid-19-resource-and-response-center)  
 For individuals and organizations within the arts communities. This resource hub contains a wealth of information about relief funds, mental health, reopening guidance for each state, and much more.
 - [USITT Online Industry Resources](https://www.usitt.org/online-industry-resources)  

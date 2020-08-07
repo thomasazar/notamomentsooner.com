@@ -5,7 +5,7 @@ weight: 1
 signatures: true
 ---
 
-# To the Boards and Leadership of Upstate Theatres —
+# To the Boards and Leadership of South Carolina Theatres —
 
 Live theatre means sharing the human experience. It is gathering together in one place, at one time, to share the air and energy with audiences, performers, technicians, ushers, patrons — the entire walk of life. It bonds us through storytelling, a tradition as old as humanity itself.
 

@@ -6,6 +6,8 @@ title: Not a Moment Sooner
 
 Following the South Carolina Governor Henry McMaster's order reopening theatres and other venues, as well as a recent incident of Covid exposure within an Upstate cast, we are gathering in a virtual town hall to discuss the risk factors in participating in live theatre at this time.
 
+[**Join us on Zoom at 4:00pm Eastern**](https://us02web.zoom.us/j/2084892863)
+
 ## Panelists
 
 ### Dr. Carmela Epright, Clinical Professor of Neuropsychiatry and Behavioral Sciences  

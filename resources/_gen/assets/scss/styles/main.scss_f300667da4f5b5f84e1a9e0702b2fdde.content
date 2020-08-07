@@ -29,7 +29,7 @@
   --color: #70BA9C;
   --color-accent: #118bee15;
   --color-bg: #4c516d;
-  --color-bg-gradient: linear-gradient(90deg, #4c6d60, #626a75);
+  --color-bg-gradient: linear-gradient(90deg, #4c6d60, #368666);
   --color-bg-secondary: #e9e9e9;
   --color-secondary: #baa679;
   --color-secondary-accent: #920de90b;

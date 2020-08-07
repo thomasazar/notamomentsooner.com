@@ -2,7 +2,6 @@
 title: Our Letter
 menu: main
 weight: 1
-signatures: true
 ---
 
 # To the Boards and Leadership of South Carolina Theatres —

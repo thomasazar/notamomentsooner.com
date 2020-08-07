@@ -2,11 +2,11 @@
 title: Not a Moment Sooner
 ---
 
-# Join us on Friday, August 7, 2020 at 4:00pm for a virtual town hall
+# Upstate Stages Covid Check-in
 
-Following the South Carolina Governor Henry McMaster's order reopening theatres and other venues, as well as a recent incident of Covid exposure within an Upstate cast, we are gathering in a virtual town hall to discuss the risk factors in participating in live theatre at this time.
+Thank you to everyone who attended our virtual town hall. If you couldn't make it, a recording of the event will be posted soon. Email [thomas@notamomentsooner.com](mailto:thomas@notamomentsooner.com) to be notified when the video is available.
 
-[**Join us on Zoom at 4:00pm Eastern**](https://us02web.zoom.us/j/2084892863)
+Following the South Carolina Governor Henry McMaster's order reopening theatres and other venues, as well as a recent incident of Covid exposure within an Upstate cast, we gathered in a virtual town hall to discuss the risk factors in participating in live theatre at this time.
 
 ## Panelists
 
@@ -27,7 +27,5 @@ In addition to her work as a professor, Dr. Epright is a ethics consultant to nu
 Danielle Hernandez was in the chorus of the school musical her sophomore year of high school. Her performance was quite terrible.   Fortunately, junior year she joined the technical theatre crew and found her calling, which led to BA in Theatre. For more than 25 years, Danielle has enjoyed working in many aspects of the live events industry. She is now the Director of McAlister Auditorium, a 1900 seat proscenium performance space at Furman University.
 
 Throughout her career she has become more and more focused on safety in the performance industry, which led to her discovery of the Event Safety Alliance. The joy of finding her tribe has led to increased involvement in the organization and in promoting safety both at local and national levels.
-
-RSVP: [checkin@notamomentsooner.com](mailto:checkin@notamomentsooner.com)
 
 ![Upstate Stages Covid Check-in](/images/checkin.jpg)

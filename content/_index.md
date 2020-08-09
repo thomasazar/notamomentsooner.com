@@ -8,6 +8,12 @@ Thank you to everyone who attended our virtual town hall. If you couldn't make i
 
 Following the South Carolina Governor Henry McMaster's order reopening theatres and other venues, as well as a recent incident of Covid exposure within an Upstate cast, we gathered in a virtual town hall to discuss the risk factors in participating in live theatre at this time.
 
+## Recorded Video
+
+Watch the discussion, recorded on August 7, 2020, right here or at [YouTube](https://www.youtube.com/watch?v=pcfYzYI1u68).
+
+{{< youtube id="pcfYzYI1u68" autoplay="false" >}}
+
 ## Panelists
 
 ### Dr. Carmela Epright, Clinical Professor of Neuropsychiatry and Behavioral Sciences  

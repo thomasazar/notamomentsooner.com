@@ -1,65 +1,78 @@
 <!-- modify this form HTML and place wherever you want your form -->
 
 <form id="company-form"
-  action="https://formspree.io/mdowbjnr"
-  method="POST"
+action="https://formspree.io/mdowbjnr"
+method="POST"
 >
-  <label>Organization Name (as you would like to appear)</label>
-  <input type="text" name="name" required="required"/>
-  <label>Email</label>
-  <input type="email" name="email" required="required"/>
-  <input type="hidden" name="_subject" value="Organization signature added" />
-  <input type="text" name="_gotcha" style="display:none" />
-  <button id="company-form-button">Join Us</button>
-  <p id="company-form-status"></p>
+<label>Organization Name (as you would like to appear)
+    <input type="text" name="name" required="required"/>
+</label>
+<label>Email
+    <input type="email" name="email" required="required"/>
+</label>
+<div>
+    <label>Can we add your to our mailing list?</label>
+    <label>
+        <input type="radio" name="mailing_list" value="yes" />
+        Yes please!
+    </label>
+    <label>
+        <input type="radio" name="mailing_list" value="no" />
+        No thanks
+    </label>
+</div>
+<input type="hidden" name="_subject" value="Organization signature added" />
+<input type="text" name="_gotcha" style="display:none" />
+<button id="company-form-button">Join Us</button>
+<p id="company-form-status"></p>
 </form>
 
 <!-- Place this script at the end of the body tag -->
 
 <script>
-  window.addEventListener("DOMContentLoaded", function() {
+    window.addEventListener("DOMContentLoaded", function() {
 
-    // get the form elements defined in your form HTML above
+        // get the form elements defined in your form HTML above
 
-    var org_form = document.getElementById("company-form");
-    var org_button = document.getElementById("company-form-button");
-    var org_status = document.getElementById("company-form-status");
+        var org_form = document.getElementById("company-form");
+        var org_button = document.getElementById("company-form-button");
+        var org_status = document.getElementById("company-form-status");
 
-    // Success and Error functions for after the form is submitted
+        // Success and Error functions for after the form is submitted
 
-    function success() {
-      org_form.reset();
-      org_button.style = "display: none ";
-      org_status.innerHTML = "Thank you for signing. Your name will appear shortly in the list of signatories.";
-    }
+        function success() {
+            org_form.reset();
+            org_button.style = "display: none ";
+            org_status.innerHTML = "Thank you for signing. Your name will appear shortly in the list of signatories.";
+        }
 
-    function error() {
-      org_status.innerHTML = "Oops! There was a problem. Please refresh the page and try again.";
-    }
+        function error() {
+            org_status.innerHTML = "Oops! There was a problem. Please refresh the page and try again.";
+        }
 
-    // handle the form submission event
+        // handle the form submission event
 
-    org_form.addEventListener("submit", function(ev) {
-      ev.preventDefault();
-      var org_data = new FormData(org_form);
-      ajax(org_form.method, org_form.action, org_data, success, error);
+        org_form.addEventListener("submit", function(ev) {
+            ev.preventDefault();
+            var org_data = new FormData(org_form);
+            ajax(org_form.method, org_form.action, org_data, success, error);
+        });
     });
-  });
 
-  // helper function for sending an AJAX request
+    // helper function for sending an AJAX request
 
-  function ajax(method, url, data, success, error) {
-    var xhr = new XMLHttpRequest();
-    xhr.open(method, url);
-    xhr.setRequestHeader("Accept", "application/json");
-    xhr.onreadystatechange = function() {
-      if (xhr.readyState !== XMLHttpRequest.DONE) return;
-      if (xhr.status === 200) {
-        success(xhr.response, xhr.responseType);
-      } else {
-        error(xhr.status, xhr.response, xhr.responseType);
-      }
-    };
-    xhr.send(data);
-  }
+    function ajax(method, url, data, success, error) {
+        var xhr = new XMLHttpRequest();
+        xhr.open(method, url);
+        xhr.setRequestHeader("Accept", "application/json");
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState !== XMLHttpRequest.DONE) return;
+            if (xhr.status === 200) {
+                success(xhr.response, xhr.responseType);
+            } else {
+                error(xhr.status, xhr.response, xhr.responseType);
+            }
+        };
+        xhr.send(data);
+    }
 </script>

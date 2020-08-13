@@ -1,65 +1,80 @@
 <!-- modify this form HTML and place wherever you want your form -->
 
 <form id="artist-form"
-  action="https://formspree.io/xnqgwogo"
-  method="POST"
+action="https://formspree.io/xnqgwogo"
+method="POST"
 >
-  <label>Name (as you would like to appear)</label>
-  <input type="text" name="name" required="required"/>
-  <label>Email</label>
-  <input type="email" name="email" required="required"/>
-  <input type="hidden" name="_subject" value="Signature added" />
-  <input type="text" name="_gotcha" style="display:none" />
-  <button id="artist-form-button">Join Us</button>
-  <p id="artist-form-status"></p>
+<label>
+    Name (as you would like to appear)
+    <input type="text" name="name" required="required"/>
+</label>
+<label>
+    Email
+    <input type="email" name="email" required="required"/>
+</label>
+<div>
+    <label>Can we add your to our mailing list?</label>
+    <label>
+        <input type="radio" name="mailing_list" value="yes" />
+        Yes please!
+    </label>
+    <label>
+        <input type="radio" name="mailing_list" value="no" />
+        No thanks
+    </label>
+</div>
+<input type="hidden" name="_subject" value="Signature added" />
+<input type="text" name="_gotcha" style="display:none" />
+<button id="artist-form-button">Join Us</button>
+<p id="artist-form-status"></p>
 </form>
 
 <!-- Place this script at the end of the body tag -->
 
 <script>
-  window.addEventListener("DOMContentLoaded", function() {
+    window.addEventListener("DOMContentLoaded", function() {
 
-    // get the form elements defined in your form HTML above
+        // get the form elements defined in your form HTML above
 
-    var form = document.getElementById("artist-form");
-    var button = document.getElementById("artist-form-button");
-    var status = document.getElementById("artist-form-status");
+        var form = document.getElementById("artist-form");
+        var button = document.getElementById("artist-form-button");
+        var status = document.getElementById("artist-form-status");
 
-    // Success and Error functions for after the form is submitted
+        // Success and Error functions for after the form is submitted
 
-    function success() {
-      form.reset();
-      button.style = "display: none ";
-      status.innerHTML = "Thank you for signing. Your name will appear shortly in the list of signatories.";
-    }
+        function success() {
+            form.reset();
+            button.style = "display: none ";
+            status.innerHTML = "Thank you for signing. Your name will appear shortly in the list of signatories.";
+        }
 
-    function error() {
-      status.innerHTML = "Oops! There was a problem. Please refresh the page and try again.";
-    }
+        function error() {
+            status.innerHTML = "Oops! There was a problem. Please refresh the page and try again.";
+        }
 
-    // handle the form submission event
+        // handle the form submission event
 
-    form.addEventListener("submit", function(ev) {
-      ev.preventDefault();
-      var data = new FormData(form);
-      ajax(form.method, form.action, data, success, error);
+        form.addEventListener("submit", function(ev) {
+            ev.preventDefault();
+            var data = new FormData(form);
+            ajax(form.method, form.action, data, success, error);
+        });
     });
-  });
 
-  // helper function for sending an AJAX request
+    // helper function for sending an AJAX request
 
-  function ajax(method, url, data, success, error) {
-    var xhr = new XMLHttpRequest();
-    xhr.open(method, url);
-    xhr.setRequestHeader("Accept", "application/json");
-    xhr.onreadystatechange = function() {
-      if (xhr.readyState !== XMLHttpRequest.DONE) return;
-      if (xhr.status === 200) {
-        success(xhr.response, xhr.responseType);
-      } else {
-        error(xhr.status, xhr.response, xhr.responseType);
-      }
-    };
-    xhr.send(data);
-  }
+    function ajax(method, url, data, success, error) {
+        var xhr = new XMLHttpRequest();
+        xhr.open(method, url);
+        xhr.setRequestHeader("Accept", "application/json");
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState !== XMLHttpRequest.DONE) return;
+            if (xhr.status === 200) {
+                success(xhr.response, xhr.responseType);
+            } else {
+                error(xhr.status, xhr.response, xhr.responseType);
+            }
+        };
+        xhr.send(data);
+    }
 </script>

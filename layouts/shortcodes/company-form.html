@@ -21,28 +21,28 @@
 
     // get the form elements defined in your form HTML above
 
-    var form = document.getElementById("company-form");
-    var button = document.getElementById("company-form-button");
-    var status = document.getElementById("company-form-status");
+    var org_form = document.getElementById("company-form");
+    var org_button = document.getElementById("company-form-button");
+    var org_status = document.getElementById("company-form-status");
 
     // Success and Error functions for after the form is submitted
 
     function success() {
-      form.reset();
-      button.style = "display: none ";
-      status.innerHTML = "Thank you for signing. Your name will appear shortly in the list of signatories.";
+      org_form.reset();
+      org_button.style = "display: none ";
+      org_status.innerHTML = "Thank you for signing. Your name will appear shortly in the list of signatories.";
     }
 
     function error() {
-      status.innerHTML = "Oops! There was a problem. Please refresh the page and try again.";
+      org_status.innerHTML = "Oops! There was a problem. Please refresh the page and try again.";
     }
 
     // handle the form submission event
 
-    form.addEventListener("submit", function(ev) {
+    org_form.addEventListener("submit", function(ev) {
       ev.preventDefault();
-      var data = new FormData(form);
-      ajax(form.method, form.action, data, success, error);
+      var org_data = new FormData(org_form);
+      ajax(org_form.method, org_form.action, org_data, success, error);
     });
   });
 

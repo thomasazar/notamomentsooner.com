@@ -1,11 +1,21 @@
-@import "generic/fonts.scss";
-@import "generic/mvp.scss";
+@import "settings/variables.scss";
 
+@import "tools/mixins.scss";
+
+@import "generic/fonts.scss";
+@import "generic/normalize.scss";
+
+@import "base/a.scss";
 @import "base/body.scss";
+@import "base/headings.scss";
 @import "base/html.scss";
 @import "base/img.scss";
 @import "base/main.scss";
 
 @import "components/banner.scss";
+@import "components/event.scss";
+@import "components/hero.scss";
 @import "components/icon.scss";
+@import "components/nav.scss";
 @import "components/signatures.scss";
+@import "components/tagline.scss";

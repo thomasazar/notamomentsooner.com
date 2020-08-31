@@ -1,0 +1,31 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__list {
+    list-style: none;
+    margin: 1.5rem 0;
+    padding: 0;
+    text-align: right;
+}
+
+.nav__item {
+    display: inline-block;
+    margin: 1rem;
+}
+
+.nav__link {
+    color: var(--color-text);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav__logo {
+    max-width: 33%;
+
+    .logo-full-icon {
+        width: 100%;
+    }
+}

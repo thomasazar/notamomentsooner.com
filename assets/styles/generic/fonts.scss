@@ -27,3 +27,13 @@
          url('/fonts/eb-garamond-v14-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
          url('/fonts/eb-garamond-v14-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
+
+  /* sen-extra-bold - latin */
+  @font-face {
+     font-family: 'Sen Extra Bold';
+     font-style: normal;
+     font-weight: 400;
+     src: local(''),
+          url('/fonts/sen_extra_bold.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+          url('/fonts/sen_extra_bold.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+   }

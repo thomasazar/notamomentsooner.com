@@ -1,5 +1,28 @@
+{{ define "banner" }}
+    <h1>When it is safe,<br>and not a moment sooner.</h1>
+{{ end }}
+
 {{ define "main" }}
     <main>
         {{ .Content }}
+        {{ $events := .GetPage "/events" }}
+        <h2>Upcoming Events</h2>
+        <p>Check out these events and opportunities from organizations that have signed our letter</p>
+        {{ range $events.Pages }}
+            <article class="event">
+                {{ $file := resources.Get .Params.image }}
+                {{ $image := $file.Fill "639x479" }}
+                <a href="{{ .Permalink }}">
+                    <img class="event__image" src="{{ $image.Permalink }}"/>
+                </a>
+                <section class="event__content">
+                    <p><strong>{{ .Params.organization }}</strong><br>{{ .Title }}</p>
+                    <p>{{ .Description }}</p>
+                    <p>
+                        <a href="{{ .Permalink }}"><strong>Learn more</strong></a>
+                    </p>
+                </section>
+            </article>
+        {{ end }}
     </main>
 {{ end }}

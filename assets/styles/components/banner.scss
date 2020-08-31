@@ -1,12 +1,24 @@
 .banner {
     display: grid;
     grid-template-columns: var(--grid-primary);
+    grid-template-rows: auto 1fr;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--color-text);
+    font-family: 'Sen Extra Bold', var(--font-family);
+    margin: 0;
 
     @media screen and (min-width: 60rem) {
         grid-template-columns: var(--grid-desktop);
     }
 
     > * {
-        grid-column: main-content; // By default, put everything in [main-content]
+        grid-column: full-content;
     }
+}
+
+.banner__tagline {
+    text-align: center;
+    font-size: 4rem;
 }

@@ -1,9 +1,22 @@
-<nav>
-    <ul>
-        {{ range .Site.Menus.main }}
-            <li>
-                <a href="{{ .URL }}">{{ .Name }}</a>
-            </li>
-        {{ end }}
-    </ul>
-</nav>
+<header class="banner">
+    <nav class="nav">
+        <a class="nav__logo" href="/">
+            {{ partial "svg" "logo-full" }}
+        </a>
+        <ul class="nav__list">
+            {{ range .Site.Menus.main }}
+                <li class="nav__item">
+                    <a class="nav__link" href="{{ .URL }}">{{ .Name }}</a>
+                </li>
+            {{ end }}
+        </ul>
+    </nav>
+    {{ if .Params.splash }}
+        {{ $file := resources.Get "images/splash.jpg" }}
+        {{ $image := $file.Resize "1220x q95" }}
+        <section class="hero">
+            {{ partial "svg" "bulb" }}
+            <h1 class="hero__tagline">{{ markdownify .Params.splash.tagline }}</h1>
+        </section>
+    {{ end }}
+</header>

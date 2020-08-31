@@ -9,4 +9,12 @@ main {
     > * {
         grid-column: main-content; // By default, put everything in [main-content]
     }
+
+    p {
+        margin: 0;
+
+        + p {
+            margin-top: 1rem;
+        }
+    }
 }

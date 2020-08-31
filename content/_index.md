@@ -1,5 +1,7 @@
 ---
 title: Not a Moment Sooner
+splash:
+  tagline: Let's build a **safer**, *healthier* theatre community for South Carolina
 ---
 
 # Upstate Stages Covid Check-in

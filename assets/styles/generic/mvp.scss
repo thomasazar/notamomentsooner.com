@@ -66,29 +66,6 @@ hr {
     margin: 4rem 0;
 }
 
-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: var(--justify-important);
-}
-
-section aside {
-    border: 1px solid var(--color-bg-secondary);
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow) var(--color-shadow);
-    margin: 1rem;
-    padding: 1.25rem;
-    width: var(--width-card);
-}
-
-section aside:hover {
-    box-shadow: var(--box-shadow) var(--color-bg-secondary);
-}
-
-section aside img {
-    max-width: 100%;
-}
-
 [hidden] {
     display: none;
 }
@@ -98,10 +75,6 @@ article header,
 div header,
 main header {
     padding-top: 0;
-}
-
-header {
-    text-align: var(--justify-important);
 }
 
 header a b,

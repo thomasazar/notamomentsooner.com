@@ -41,12 +41,7 @@
 </head>
 
 <body>
-    <header class="banner">
-        {{ partial "banner" . }}
-        <a href="/" class="banner__logo">
-            {{ partial "svg" "logo" }}
-        </a>
-    </header>
+    {{ partial "banner" . }}
     {{ block "main" . }}{{ end }}
 </body>
 

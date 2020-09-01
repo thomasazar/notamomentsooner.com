@@ -1,3 +1,9 @@
 body {
-    font-size: clamp(1rem, calc(0.125rem + 2vw), 1.5rem);
+    background: var(--color-bg-gradient);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100% 0.25rem;
+    font-family: 'EB Garamond', var(--font-family);
+    font-size: clamp(1.125rem, calc(0.125rem + 2vw), 1.75rem);
+    padding: 0.25rem 0 1.5rem;
 }

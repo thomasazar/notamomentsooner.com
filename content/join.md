@@ -12,6 +12,8 @@ Both fields are required. We will not share your email address with anyone.
 
 # Companies, we welcome your support, too
 
-The theatre artists of the Upstate welcome those producing organizations who wish to stand with us in health and solidarity. Both fields are required. We will not share your email address with anyone.
+The theatre artists of the Upstate welcome those producing organizations who wish to stand with us in health and solidarity.
+
+Both fields are required. We will not share your email address with anyone.
 
 {{< company-form >}}

@@ -11,12 +11,18 @@
             {{ end }}
         </ul>
     </nav>
-    {{ if .Params.splash }}
-        {{ $file := resources.Get "images/splash.jpg" }}
-        {{ $image := $file.Resize "1220x q95" }}
+    {{ with .Params.hero }}
         <section class="hero">
-            {{ partial "svg" "bulb" }}
-            <h1 class="hero__tagline">{{ markdownify .Params.splash.tagline }}</h1>
+            {{ if $.IsHome }}
+                {{ partial "svg" "bulb" }}
+            {{ else }}
+                {{ with .image }}
+                    {{ $file := resources.Get . }}
+                    {{ $image := $file.Resize "1220x q90" }}
+                    <img class="hero__image" src="{{ $image.Permalink }}">
+                {{ end }}
+            {{ end }}
+            <h1 class="hero__tagline">{{ markdownify .text }}</h1>
         </section>
     {{ end }}
 </header>

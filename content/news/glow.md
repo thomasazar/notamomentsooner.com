@@ -3,11 +3,15 @@ title: A Very Happy Unopening
 organization: Glow Lyric Theatre
 image: images/unopening.jpg
 description: Glow's 2020 Season may have been delayed to 2021, but they’re still celebrating the joy and excitement of opening night…
+hero:
+    text: "**Glow Lyric Theatre's** A Very Happy Unopening"
+    image: images/unopening.jpg
 ---
 
 ### Streaming on Facebook Live through August 21
 
-- [View the virtual concert here](https://www.facebook.com/GlowLyricTheatre/videos/342367186920040)
+[**View the virtual concert here**](https://www.facebook.com/GlowLyricTheatre/videos/342367186920040)
+
 - Free, $10 donation suggested
 - Run time: 45 minutes
 

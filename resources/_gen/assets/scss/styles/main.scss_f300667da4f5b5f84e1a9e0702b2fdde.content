@@ -374,6 +374,8 @@ body {
   font-size: clamp(1.125rem, calc(0.125rem + 2vw), 1.75rem);
   padding: 0.25rem 0 1.5rem; }
 
+a b,
+a strong,
 button {
   background: var(--color-bg-gradient);
   border: 0;
@@ -388,9 +390,13 @@ button {
   margin: 0.5rem 0;
   padding: 1rem 2rem;
   text-shadow: 1px 1px 1px #333333aa; }
+  a b:hover,
+  a strong:hover,
   button:hover {
     cursor: pointer;
     filter: brightness(var(--hover-brightness)); }
+  a b:active,
+  a strong:active,
   button:active {
     position: relative;
     top: 0.125rem; }
@@ -514,19 +520,24 @@ main {
   text-align: center;
   font-size: 4rem; }
 
-.event {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  grid-template-rows: auto 1fr;
-  width: 100%;
-  background: var(--color-text);
-  color: var(--color-bg);
-  border-radius: 2px; }
-  .event + .event {
-    margin-top: 2rem; }
+.event__image {
+  margin: 0; }
+  .event__image img {
+    border-radius: var(--border-radius);
+    object-fit: cover;
+    width: 100%; }
 
-.event__content {
-  padding: 1rem; }
+.event__content h3 {
+  background: none;
+  background-clip: unset;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: var(--color-text);
+  -webkit-box-decoration-break: unset;
+  box-decoration-break: unset;
+  line-height: 1;
+  margin: 1rem 0;
+  text-shadow: none;
+  filter: none; }
 
 .hero {
   display: grid;
@@ -535,7 +546,8 @@ main {
   background: var(--color-bg-gradient);
   border-radius: var(--border-radius);
   box-shadow: 0 1rem 1rem -0.5rem #333333aa;
-  margin: 1.5rem 0 0; }
+  margin: 1.5rem 0 0;
+  overflow: hidden; }
   .hero svg {
     fill: #f2f2f2;
     margin: 0 auto;
@@ -550,6 +562,7 @@ main {
         max-height: none; } }
 .hero__tagline {
   color: #f2f2f2;
+  font-weight: normal;
   margin: 0;
   padding: 1rem 1rem;
   text-align: center;
@@ -562,6 +575,9 @@ main {
   .hero__tagline em {
     font-weight: normal;
     font-style: normal; }
+
+.hero__image {
+  opacity: 0.5; }
 
 .logo-icon {
   max-width: 100%;
@@ -594,6 +610,12 @@ nav {
   color: var(--color-text);
   font-weight: bold;
   text-decoration: none; }
+
+.news {
+  grid-column: full-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 3rem; }
 
 .signatures {
   columns: 3;

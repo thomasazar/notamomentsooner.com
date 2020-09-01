@@ -365,6 +365,10 @@ a {
     filter: brightness(var(--hover-brightness));
     text-decoration: underline; }
 
+blockquote {
+  border-left: 5px solid var(--color);
+  padding-left: 1rem; }
+
 body {
   background: var(--color-bg-gradient);
   background-position: top;

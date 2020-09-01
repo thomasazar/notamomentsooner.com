@@ -614,8 +614,8 @@ nav {
 .news {
   grid-column: full-content;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 3rem; }
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 3rem; }
 
 .signatures {
   columns: 3;

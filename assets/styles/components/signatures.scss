@@ -5,6 +5,10 @@
 
     li {
         break-inside: avoid;
+
+        + li {
+            margin-top: 0.5rem;
+        }
     }
 
     @media screen and (min-width: 60rem) {

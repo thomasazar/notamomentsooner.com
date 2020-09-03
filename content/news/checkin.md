@@ -1,5 +1,6 @@
 ---
 title: Upstate Stages Covid Check-in
+date: 2020-08-07
 image: images/checkin.jpg
 description: Watch our virtual town hall to hear about the risk factors in participating in live theatre at this time.
 hero:

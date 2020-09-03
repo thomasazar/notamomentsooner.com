@@ -1,5 +1,6 @@
 ---
 title: Donate to local theatres and schools
+date: 2020-08-12
 organization: Escobar Photography
 image: images/escobar.jpg
 description: 20% of gift card sales are donated to local theatres and school theatre programs.

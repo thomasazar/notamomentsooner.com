@@ -1,5 +1,6 @@
 ---
 title: A Very Happy Unopening
+date: 2020-08-13
 organization: Glow Lyric Theatre
 image: images/unopening.jpg
 description: Glow's 2020 Season may have been delayed to 2021, but they’re still celebrating the joy and excitement of opening night…

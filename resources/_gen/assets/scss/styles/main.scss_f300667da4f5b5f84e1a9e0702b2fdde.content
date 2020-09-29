@@ -20,29 +20,10 @@
   --hover-brightness: 1.2;
   --line-height: 1.5; }
 
-/* eb-garamond-regular - latin */
 @font-face {
-  font-family: 'EB Garamond';
-  font-style: normal;
-  font-weight: 400;
-  src: local(""), url("/fonts/eb-garamond-v14-latin-regular.woff2") format("woff2"), url("/fonts/eb-garamond-v14-latin-regular.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
-
-/* eb-garamond-700 - latin */
-@font-face {
-  font-family: 'EB Garamond';
-  font-style: normal;
-  font-weight: 700;
-  src: local(""), url("/fonts/eb-garamond-v14-latin-700.woff2") format("woff2"), url("/fonts/eb-garamond-v14-latin-700.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
-
-/* eb-garamond-italic - latin */
-@font-face {
-  font-family: 'EB Garamond';
-  font-style: italic;
-  font-weight: 400;
-  src: local(""), url("/fonts/eb-garamond-v14-latin-italic.woff2") format("woff2"), url("/fonts/eb-garamond-v14-latin-italic.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
+  font-family: 'Varta';
+  src: url("/fonts/Varta-VariableFont_wght.ttf") format("truetype-variations");
+  font-weight: 300 700; }
 
 /* sen-extra-bold - latin */
 @font-face {
@@ -136,7 +117,7 @@ abbr[title] {
    */
 b,
 strong {
-  font-weight: bolder; }
+  font-weight: 700; }
 
 /**
    * 1. Correct the inheritance and scaling of font size in all browsers.
@@ -360,7 +341,7 @@ template {
 a {
   color: var(--color-secondary);
   display: inline-block;
-  font-weight: bold;
+  font-weight: 700;
   text-decoration: none; }
   a:hover {
     filter: brightness(var(--hover-brightness));
@@ -377,6 +358,7 @@ body {
   background-size: 100% 0.25rem;
   font-family: var(--font-family);
   font-size: clamp(1.125rem, calc(0.125rem + 2vw), 1.5rem);
+  font-weight: 350;
   padding: 0.25rem 0 1.5rem; }
 
 a b,

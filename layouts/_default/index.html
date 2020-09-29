@@ -7,10 +7,8 @@
             {{ range $events.Pages }}
                 <article class="event">
                     {{ $file := resources.Get .Params.image }}
-                    {{ $image := $file.Fill "639x479" }}
-                    <a class="event__image" href="{{ .Permalink }}">
-                        <img src="{{ $image.Permalink }}"/>
-                    </a>
+                    {{ $image := $file.Fill "700x320 q85" }}
+                    <a class="event__image" href="{{ .Permalink }}" style="background-image: url('{{ $image.Permalink }}');">   </a>
                     <section class="event__content">
                         <h3>{{ .Title }}</h3>
                         <p>{{ .Description }}</p>

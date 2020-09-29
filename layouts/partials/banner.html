@@ -18,7 +18,7 @@
             {{ else }}
                 {{ with .image }}
                     {{ $file := resources.Get . }}
-                    {{ $image := $file.Resize "1220x q90" }}
+                    {{ $image := $file.Resize "500x q90" }}
                     <img class="hero__image" src="{{ $image.Permalink }}">
                 {{ end }}
             {{ end }}

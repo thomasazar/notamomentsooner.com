@@ -1,10 +1,19 @@
-.event__image {
-    margin: 0;
+.event {
 
-    img {
-        border-radius: var(--border-radius);
-        object-fit: cover;
-        width: 100%;
+}
+
+.event__image {
+    height: 320px;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+
+    @media screen and (min-width: 60rem) {
+        height: 200px;
     }
 }
 

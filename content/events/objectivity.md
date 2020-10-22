@@ -2,7 +2,8 @@
 title: Objectivity
 date: 2020-09-03 09:38:39
 image: images/objectivity.jpg
-description: An entirely new invented piece … part improv, part musical, part seminar, part game … featuring all the fun, humor, heart, relevance, and entertainment value that you expect from a Warehouse Theatre show.
+description: |
+  An entirely new invented piece … part improv, part musical, part seminar, part game … featuring all the fun, humor, heart, relevance, and entertainment value that you expect from a **Warehouse Theatre** show.
 hero:
   image: images/objectivity.jpg
   text: "**The Warehouse Theatre** presents OBJECTIVITY: From Clutter to Clarity with Mary Del Campo"

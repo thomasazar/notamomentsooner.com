@@ -1,23 +1,10 @@
 {{ define "main" }}
     <main>
         {{ .Content }}
-        {{ $events := .GetPage "/news" }}
-        <h2>The Latest</h2>
-        <section class="news">
-            {{ range $events.Pages }}
-                <article class="event">
-                    {{ $file := resources.Get .Params.image }}
-                    {{ $image := $file.Fill "700x320 q85" }}
-                    <a class="event__image" href="{{ .Permalink }}" style="background-image: url('{{ $image.Permalink }}');">   </a>
-                    <section class="event__content">
-                        <h3>{{ .Title }}</h3>
-                        <p>{{ .Description }}</p>
-                        <p>
-                            <a href="{{ .Permalink }}"><strong>Learn more</strong></a>
-                        </p>
-                    </section>
-                </article>
-            {{ end }}
-        </section>
+        <h2>Upcoming Events</h2>
+        <p>Check out these socially-distanced events presented in the spirit of our letter!</p>
+        {{ partial "listing" (.GetPage "/events") }}
+        <h2>News and Updates</h2>
+        {{ partial "listing" (.GetPage "/news") }}
     </main>
 {{ end }}

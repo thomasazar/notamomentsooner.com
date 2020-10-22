@@ -1,0 +1,16 @@
+<section class="news">
+    {{ range .Pages }}
+        <article class="event">
+            {{ $file := resources.Get .Params.image }}
+            {{ $image := $file.Fill "700x320 q85" }}
+            <a class="event__image" href="{{ .Permalink }}" style="background-image: url('{{ $image.Permalink }}');">   </a>
+            <section class="event__content">
+                <h3>{{ .Title }}</h3>
+                <p>{{ markdownify .Description }}</p>
+                <p>
+                    <a href="{{ .Permalink }}"><strong>Learn more</strong></a>
+                </p>
+            </section>
+        </article>
+    {{ end }}
+</section>

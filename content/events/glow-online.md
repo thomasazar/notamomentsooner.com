@@ -1,7 +1,8 @@
 ---
 title: Glow Online
 date: 2020-09-03 09:55:30
-description: While we may not be together this summer due to the postponement of the 2020 Festival Season to 2021, it doesn’t mean Glow will stop entertaining you.
+description: |
+  While we may not be together, it doesn’t mean **Glow Lyric Theatre** will stop entertaining you.
 image: images/glow-online.jpg
 hero:
   image: images/glow-online.jpg

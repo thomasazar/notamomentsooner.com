@@ -2,6 +2,7 @@
 title: Join Us
 menu: main
 weight: 2
+draft: true
 ---
 
 # Artists, add your signature to the letter
